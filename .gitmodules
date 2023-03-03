@@ -1,0 +1,3 @@
+[submodule "Structs"]
+	path = Structs
+	url = git@github.com:Jd4rc3/Rust-Structs.git
