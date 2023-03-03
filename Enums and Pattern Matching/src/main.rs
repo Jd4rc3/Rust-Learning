@@ -1,9 +1,13 @@
 fn main() {
-    let home = IpAddrKind::V4(127, 0, 0, 1);
-    let loopback = IpAddrKind::V6(String::from("::1"));
+    let home = IpAddrKind::V4(Ipv4Addr);
+    let loopback = IpAddrKind::V6(Ipv6Addr);
 }
 
 enum IpAddrKind {
-    V4(u8, u8, u8, u8),
-    V6(String),
+    V4(Ipv4Addr),
+    V6(Ipv6Addr),
 }
+
+struct Ipv4Addr {}
+
+struct Ipv6Addr {}
